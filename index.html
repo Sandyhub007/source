@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soul Connect - Affordable, Accessible, and Culturally Adapted Mental Health Support for NRIs and Indians Worldwide. Join our supportive community today.">
+    <title>Connect & Heal with Trusted Support</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A1A1A',
+                        secondary: '#38A169',
+                        accent: '#2B6CB0'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Scripts -->
+    <script src="scripts/analytics.js" type="module" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/cards.js" type="module" defer></script>
+    <script src="scripts/form.js" defer></script>
+    
+    <!-- Mixpanel -->
+    <script>
+        (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+    </script>
+    <!-- Calendly Widget Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor">
+                            <path d="M20 10C17 3 8 3 8 10C8 16 20 24 20 24C20 24 32 16 32 10C32 3 23 3 20 10Z" stroke-width="2"/>
+                            <path d="M16 8L24 12M24 8L16 12" stroke-width="2"/>
+                            <path d="M18 6L22 14" stroke-width="2"/>
+                        </svg>
+                        <span class="text-xl font-bold text-primary">Soul Connect</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#therapists" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Therapists</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Pricing</a>
+                    <a href="#waitlist" class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-full text-sm font-medium transition-all">Join Waitlist</a>
+                </div>
+                
+                <button class="md:hidden bg-gray-50 p-2 rounded-md" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">About</a>
+                <a href="#therapists" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Therapists</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Testimonials</a>
+                <a href="#pricing" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Pricing</a>
+                <a href="#waitlist" class="block px-3 py-2 text-base font-medium text-white bg-primary rounded-md">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary tracking-tight">
+                    <span class="block">Connect & Heal</span>
+                    <span class="block mt-2">with Trusted Support</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Join our culturally-sensitive mental health community. Experience group sessions guided by people who truly understand your cultural context and life experiences.
+                </p>
+                <div class="mt-8">
+                    <a href="#early-access" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Join Our Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Our Mission</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                    <div class="flex justify-center mb-8">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center">
+                            <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24">
+                                <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700 text-center mb-10">
+                        Soul Connect is a safe space where Indians living abroad can find meaningful, culturally resonant peer support. 
+                        Our services are tailored to help you navigate life's challenges while honoring your heritage and unique experiences.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                        <div class="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-md transition-all">
+                            <span class="text-3xl mb-4 block">🌍</span>
+                            <span class="font-medium text-primary">Global Community</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-md transition-all">
+                            <span class="text-3xl mb-4 block">🤝</span>
+                            <span class="font-medium text-primary">Cultural Understanding</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-md transition-all">
+                            <span class="text-3xl mb-4 block">💫</span>
+                            <span class="font-medium text-primary">Personal Growth</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="#waitlist" class="inline-block">
+                            <div class="bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl p-6 transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-xl">
+                                <span class="block text-sm font-medium uppercase tracking-wide">Starting as low as</span>
+                                <span class="block text-4xl font-bold my-1">$20</span>
+                                <span class="block text-sm opacity-90">for 4 sessions</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapist Section -->
+    <section id="therapists" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Meet Our Expert Therapists</h2>
+            <div class="relative">
+                <button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 p-3 rounded-full shadow-lg hover:bg-primary hover:text-white transition-all" aria-label="Previous">❮</button>
+                <div class="overflow-hidden px-12">
+                    <div class="flex gap-6 transition-all">
+                        <!-- Therapist cards will be dynamically added here -->
+                    </div>
+                </div>
+                <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 p-3 rounded-full shadow-lg hover:bg-primary hover:text-white transition-all" aria-label="Next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peer Moderator Section -->
+    <section id="moderators" class="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Our Peer Moderators</h2>
+            <div class="relative">
+                <div class="overflow-hidden px-4 md:px-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Peer Moderator Card 1 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <img src="assets/images/moderators/vashisht.jpg" 
+                                     alt="Vashisht Rathi" 
+                                     class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-primary/10">
+                                <h3 class="text-xl font-semibold text-primary mb-2">Vashisht Rathi</h3>
+                                <p class="text-gray-600 mb-4">Lead Peer Moderator</p>
+                                <p class="text-gray-700 text-sm mb-4">
+                                    With 5+ years of experience in mental health advocacy, Vashisht specializes in helping NRIs navigate cultural transitions and identity challenges. Certified in Mental Health First Aid.
+                                </p>
+                                <div class="flex justify-center space-x-3">
+                                    <span class="px-3 py-1 bg-primary/5 rounded-full text-xs text-primary">Cultural Integration</span>
+                                    <span class="px-3 py-1 bg-primary/5 rounded-full text-xs text-primary">Identity</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Peer Moderator Card 2 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <img src="assets/images/moderators/priya.jpg" 
+                                     alt="Priya Sharma" 
+                                     class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-primary/10">
+                                <h3 class="text-xl font-semibold text-primary mb-2">Priya Sharma</h3>
+                                <p class="text-gray-600 mb-4">Wellness Coach</p>
+                                <p class="text-gray-700 text-sm mb-4">
+                                    A certified wellness coach with expertise in work-life balance and stress management. Priya helps NRI professionals navigate career challenges while maintaining mental well-being.
+                                </p>
+                                <div class="flex justify-center space-x-3">
+                                    <span class="px-3 py-1 bg-primary/5 rounded-full text-xs text-primary">Work-Life Balance</span>
+                                    <span class="px-3 py-1 bg-primary/5 rounded-full text-xs text-primary">Stress Management</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Peer Moderator Card 3 -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <img src="assets/images/moderators/arun.jpg" 
+                                     alt="Arun Patel" 
+                                     class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-primary/10">
+                                <h3 class="text-xl font-semibold text-primary mb-2">Arun Patel</h3>
+                                <p class="text-gray-600 mb-4">Family Dynamics Specialist</p>
+                                <p class="text-gray-700 text-sm mb-4">
+                                    With a background in family counseling, Arun helps NRI families bridge generational gaps and maintain strong cultural connections while adapting to new environments.
+                                </p>
+                                <div class="flex justify-center space-x-3">
+                                    <span class="px-3 py-1 bg-primary/5 rounded-full text-xs text-primary">Family Relations</span>
+                                    <span class="px-3 py-1 bg-primary/5 rounded-full text-xs text-primary">Cultural Bridge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Affordable Pricing Options for Everyone</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Your Mental Wellness Journey</h3>
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24">
+                                <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700 mb-8">
+                            Focus on your mental health journey without worrying about the cost. We believe quality mental health support should be accessible to everyone. Join our community for personalized, culturally-sensitive care that fits your needs.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-all">
+                            <span class="text-2xl mb-3 block">✨</span>
+                            <span class="font-medium text-primary">Flexible Support Options</span>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-all">
+                            <span class="text-2xl mb-3 block">🤝</span>
+                            <span class="font-medium text-primary">Personalized Care Plans</span>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-all">
+                            <span class="text-2xl mb-3 block">💫</span>
+                            <span class="font-medium text-primary">Inclusive Community</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="#waitlist" class="inline-flex items-center px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-all transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl">
+                            Start Your Journey
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary/60" viewBox="0 0 24 24">
+                            <path d="M10 11L7 14L4 11V4H10V11Z M20 11L17 14L14 11V4H20V11Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-center">"Soul Connect helped me bridge the cultural gap in therapy. Finally found someone who truly understands the unique challenges of being an NRI."</p>
+                    <div class="text-center">
+                        <p class="font-semibold text-primary">Priya S.</p>
+                        <p class="text-sm text-gray-500">San Francisco, USA</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary/60" viewBox="0 0 24 24">
+                            <path d="M10 11L7 14L4 11V4H10V11Z M20 11L17 14L14 11V4H20V11Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-center">"The peer support system here is incredible. It's comforting to connect with others who share similar experiences and cultural backgrounds."</p>
+                    <div class="text-center">
+                        <p class="font-semibold text-primary">Rahul M.</p>
+                        <p class="text-sm text-gray-500">London, UK</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary/60" viewBox="0 0 24 24">
+                            <path d="M10 11L7 14L4 11V4H10V11Z M20 11L17 14L14 11V4H20V11Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-center">"Affordable and accessible mental health support that actually understands our cultural context. This is exactly what the NRI community needed."</p>
+                    <div class="text-center">
+                        <p class="font-semibold text-primary">Anita P.</p>
+                        <p class="text-sm text-gray-500">Toronto, Canada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book-session" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Book Your 30-Minute Session</h2>
+            <p class="text-center text-gray-600 mb-8">Select a convenient time slot for your session.</p>
+            
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" 
+                data-url="https://calendly.com/vashisht-therastudio/30min?hide_gdpr_banner=1&background_color=ffffff&text_color=1a1a1a&primary_color=1a1a1a"
+                style="min-width:320px;height:700px;">
+            </div>
+            <!-- Calendly inline widget end -->
+        </div>
+    </section>
+
+    <!-- Calendly initialization script -->
+    <script type="text/javascript">
+        window.onload = function() {
+            Calendly.initInlineWidget({
+                url: 'https://calendly.com/vashisht-therastudio/30min?hide_gdpr_banner=1&background_color=ffffff&text_color=1a1a1a&primary_color=1a1a1a',
+                parentElement: document.getElementsByClassName('calendly-inline-widget')[0],
+            });
+        };
+    </script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                    <p class="text-lg text-gray-700 mb-4">
+                        Have questions? We're here to help. Reach out to us at
+                    </p>
+                    <a href="mailto:vashisht@therastudio.in" class="text-xl font-medium text-primary hover:text-primary/80 transition-colors">
+                        vashisht@therastudio.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" stroke="currentColor">
+                            <path d="M20 10C17 3 8 3 8 10C8 16 20 24 20 24C20 24 32 16 32 10C32 3 23 3 20 10Z" stroke-width="2"/>
+                            <path d="M16 8L24 12M24 8L16 12" stroke-width="2"/>
+                            <path d="M18 6L22 14" stroke-width="2"/>
+                        </svg>
+                        <h3 class="text-xl font-bold">Soul Connect</h3>
+                    </div>
+                    <p class="text-white/80">Empowering NRIs with culturally-sensitive mental health support and peer connections.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <p><a href="#about" class="text-white/80 hover:text-white transition-colors">About Us</a></p>
+                        <p><a href="#therapists" class="text-white/80 hover:text-white transition-colors">Our Therapists</a></p>
+                        <p><a href="#testimonials" class="text-white/80 hover:text-white transition-colors">Testimonials</a></p>
+                        <p><a href="#pricing" class="text-white/80 hover:text-white transition-colors">Pricing</a></p>
+                        <p><a href="#waitlist" class="text-white/80 hover:text-white transition-colors">Join Waitlist</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="mb-2">Email: <a href="mailto:vashisht@therastudio.in" class="text-white/80 hover:text-white transition-colors">vashisht@therastudio.in</a></p>
+                    <p class="mb-6">Support Hours: 24/7</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3ZM9 17H6.477V10H9V17ZM7.694 8.717C6.923 8.717 6.408 8.203 6.408 7.517C6.408 6.831 6.922 6.317 7.779 6.317C8.55 6.317 9.065 6.831 9.065 7.517C9.065 8.203 8.551 8.717 7.694 8.717ZM18 17H15.558V13.174C15.558 12.116 14.907 11.872 14.663 11.872C14.419 11.872 13.358 12.035 13.358 13.174C13.358 13.337 13.358 17 13.358 17H10.919V10H13.358V11.129C13.847 10.318 14.744 10 15.558 10C16.371 10 18 10.486 18 13.174V17Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 5.8C21.2 6.1 20.4 6.3 19.5 6.4C20.4 5.9 21.1 5 21.4 4C20.6 4.5 19.7 4.8 18.8 5C18 4.1 16.9 3.5 15.7 3.5C13.5 3.5 11.7 5.3 11.7 7.5C11.7 7.8 11.7 8.1 11.8 8.4C8.3 8.2 5.1 6.6 3.2 4.1C2.9 4.7 2.7 5.4 2.7 6.1C2.7 7.5 3.4 8.7 4.5 9.4C3.8 9.4 3.1 9.2 2.5 8.9V9C2.5 11 3.9 12.6 5.7 13C5.4 13.1 5.1 13.1 4.8 13.1C4.6 13.1 4.4 13.1 4.2 13C4.6 14.6 6.1 15.8 7.9 15.8C6.5 16.9 4.7 17.5 2.9 17.5C2.6 17.5 2.3 17.5 2 17.4C3.8 18.6 5.9 19.2 8.1 19.2C15.7 19.2 19.8 13.1 19.8 7.8C19.8 7.6 19.8 7.4 19.8 7.2C20.6 6.7 21.3 6 22 5.8Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/20">
+                <p class="text-white/60">© 2025 Soul Connect | Empowering NRIs, Worldwide</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

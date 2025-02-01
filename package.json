@@ -1,0 +1,27 @@
+{
+  "name": "soulconew",
+  "version": "1.0.0",
+  "description": "Soul Connect - Mental Health Support for NRIs",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "mkdir -p dist && cp index.html dist/ && cp -r scripts dist/ && cp -r styles dist/ && cp -r assets dist/",
+    "preview": "vite preview",
+    "start": "python -m http.server"
+  },
+  "keywords": [
+    "mental-health",
+    "nri",
+    "therapy",
+    "support"
+  ],
+  "author": "Soul Connect",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "mixpanel-browser": "^2.58.0",
+    "express": "^4.18.2"
+  }
+}
